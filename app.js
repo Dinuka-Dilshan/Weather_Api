@@ -17,6 +17,6 @@ app.use((req, res, next) => {
 
 app.post("/api/weather", getData);
 
-app.listen(5005, (err) => {
+app.listen(process.env.PORT, (err) => {
   !err && console.log("started");
 });
